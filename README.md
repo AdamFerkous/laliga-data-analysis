@@ -11,9 +11,28 @@ The goal is to analyze LaLiga matches across multiple seasons and answer practic
 - Which teams are the most offensively effective?
 - Which KPIs best summarize overall performance?
 
+## Key Results
+
+- Home teams win **44.60%** of matches vs **28.26%** for away teams
+- Average goals per match: **1.28**
+- Barcelona dominates with **2.17 goals/match**, followed by Real Madrid (**2.01 goals/match**)
+- Goal scoring peaked in 2023 (**1.32 goals/match**), up from **1.24** in 2019
+
+## Sample Visualizations
+
+![Match Results Distribution](images/match_results.png)
+
+![Goals Evolution Over Seasons](images/goals_per_season.png)
+
+![Average Goals per Team](images/goals_per_team.png)
+
+## Conclusion
+
+This analysis highlights a strong home advantage and consistent dominance from top teams like Barcelona and Real Madrid. It also reveals a slight upward trend in goal scoring over recent seasons, suggesting evolving offensive dynamics in LaLiga.
+
 ## Project Overview
 
-- **Main notebook**: `ligadataset_analysis.ipynb`
+- **Main notebook**: `laliga_analysis.ipynb`
 - **Dataset**: `matches_full.csv`
 - **Dependencies**: `requirements.txt`
 
@@ -39,7 +58,7 @@ The notebook is organized into:
 
 ```text
 laliga-data-analysis/
-|- ligadataset_analysis.ipynb
+|- laliga_analysis.ipynb
 |- matches_full.csv
 |- requirements.txt
 |- README.md
@@ -83,7 +102,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Then open `ligadataset_analysis.ipynb`.
+Then open `laliga_analysis.ipynb`.
 
 
 ## Reproducibility Notes
@@ -96,7 +115,11 @@ For stronger reproducibility:
 
 ## Data Source
 
-LaLiga matches dataset (2019-2025), source referenced in the notebook: FBref.
+LaLiga matches dataset (2019–2025)
+
+- Source: FBref
+- Available on Kaggle: https://www.kaggle.com/datasets/marcelbiezunski/laliga-matches-dataset-2019-2025-fbref?select=matches_laliga.csv
+
 
 ## Author
 
